@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20pt"
+        android:padding="10pt"
+        app:cardBackgroundColor="@color/main_background"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="7pt">
+        <LinearLayout
+            android:background="@drawable/transparent_button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:backgroundTint="#fff"
+                android:hint="Email Address"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:layout_marginTop="10pt"
+                android:drawableLeft="@mipmap/email"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:backgroundTint="#fff"
+                android:textColor="#fff"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:drawableLeft="@mipmap/lock"
+                android:textColorHint="#fff"
+                android:layout_marginTop="5pt"
+                android:layout_marginBottom="10pt"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab_login"
+        app:backgroundTint="#fff"
+        android:src="@mipmap/fingerprint"
+        android:layout_below="@+id/cardview"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
